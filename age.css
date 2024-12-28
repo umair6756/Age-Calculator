@@ -1,0 +1,189 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: #0a6cf1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator{
+  height: 7rem;
+  width: 30rem;
+  background: #080808;
+  margin-top: 6rem;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 15px 20px rgba(0,0,0,0.3);
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-around;
+
+
+
+
+}
+
+[type="date"]{
+  height: 3rem;
+  width: 15rem;
+  font-size: x-large;
+  padding: 1rem;
+  margin-left: 1rem;
+  background:#fff; ;
+  color: #080808;
+  font-weight: 500;
+  border-radius: 5px;
+
+}
+
+button{
+  height: 3rem;
+  width: 7rem;
+  font-size:large;
+}
+
+.outPut{
+  width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.outPut div{
+  margin-top: 4rem;
+  height: 8rem;
+  width: 8rem;
+  background: #080808;
+  color: #f0f0f0;
+  border-radius: 5px;
+  display: grid;
+    place-items: center;
+    padding: 20px 0;
+    box-shadow: 0 15px 20px rgba(0,0,0,0.3);
+}
+
+p{
+    font-size: 14px;
+    color: #707070;
+    font-weight: 400;
+}
+
+@media (max-width:600px) {
+  body{
+    min-width: 100vw;
+
+  }
+
+  .container{
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+  }
+
+  .calculator{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 10rem;
+    justify-content: flex-start;
+    margin-right: 5rem;
+
+
+  }
+
+  [type="date"]{
+    width: auto;
+    margin: 0;
+    margin-top: 1.5rem;
+
+  }
+
+  button{
+    width: 12.2rem;
+    margin-top: 1rem;
+  }
+
+  .outPut{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .outPut div{
+      width: 100%;
+
+
+  }
+
+  p{
+    font-size: 20px;
+  }
+
+  span{
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  body {
+    min-width: 100vw; /* Good practice to ensure it takes full viewport width */
+    /* margin: 0; */ /* Uncomment this if you want to remove any default body margin */
+  }
+
+  .container {
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: flex-start;
+  }
+
+  .calculator {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Use percentage to allow for responsiveness */
+    max-width: 20rem; /* Max width to prevent it from being too wide */
+    height: 12rem;; /* Allow height to adjust based on content */
+    margin: 1rem 0; /* Vertical margin for spacing */
+  }
+
+  [type="date"] {
+    width: 90%;
+    margin: 0;
+    margin-top: 1rem;
+
+
+
+  }
+
+  button {
+    width: 90%;
+    margin-top: rem;
+
+  }
+
+  .outPut {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* width: 100%; /* Ensure output takes full width */ */
+  }
+
+  .outPut div {
+    width: 100%; /* Allow output divs to take full width */
+    max-width: 16rem; /* Set max width to avoid overflow */
+    margin-right: 0; /* Removed fixed margin for better responsiveness */
+    margin-left: 0; /* Added for symmetry, if needed */
+  }
+}
